@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img src="img/logo.png" class="header__logo" alt="logo"></a>
+    </header>
+    
+    <nav class="navegacion">
+        <a href="index.html" class="navegacion__enlace">Tienda &nbsp; </a>
+        <a href="nosotros.html" class="navegacion__enlace navegacion__enlace--activo"> &nbsp; Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Harley Quinn</h1>
+        <div class="remera">
+            <img src="img/b-01.jpg" class="remera__imagen" alt="imagen del producto">
+
+            <div class="remera__contenido">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis quibusdam, veritatis dolore repellat ab.</p>
+
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>Selecciona talle</option>
+                        <option >Small (S)</option>
+                        <option >Medium (M)</option>
+                        <option >Large (L)</option>
+                        <option >Extra Large (XL)</option>
+                    </select>
+                    <input type="number" class="formulario__campo" min="1" max="10" placeholder="Cantidad">
+                    <input type="submit" class="formulario__submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">T-Shirtfy - Todos los derechos reservados 2021.</p>
+    </footer>
+</body>
+</html>
