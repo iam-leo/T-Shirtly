@@ -12,6 +12,7 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;   /* 1rem = 10px */
+    padding: 0;
 }
 
 *, *::before, *::after{
@@ -108,10 +109,7 @@ h3{
     text-align: center;
     background-color: var(--secundario);
     padding: 1rem 0;
-    margin-top: 2rem;
-    /* position: absolute; */
-    bottom: 0;
-    left: 0;
+    margin-top: 2rem;    
     width: 100%;
 }
 
@@ -262,9 +260,17 @@ h3{
 .remera__imagen{
     margin: 0 auto;
     display: block;
+    padding: 1.5rem;
+}
+
+.remera__contenido p{
+    padding: 1rem 1.5rem;
 }
 
 @media (min-width: 768px){
+    .contenedor__remera{
+        margin: 15rem auto 22rem auto;
+    }
     .remera{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -274,6 +280,11 @@ h3{
     .remera__imagen{
         width: 70% !important; 
         max-height: 50rem !important;
+        padding: 0;
+    }
+
+    .remera__contenido p{
+        padding: 0;
     }
 }
 
